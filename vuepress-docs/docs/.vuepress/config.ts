@@ -21,6 +21,7 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
           '/components/Layout.md',
           '/components/QButton.md',
           '/components/QBreadcrumbs.md',
+          '/components/QCard.md',
           '/components/QCascader.md',
           '/components/QCheckbox.md',
           '/components/QCheckboxGroup.md',

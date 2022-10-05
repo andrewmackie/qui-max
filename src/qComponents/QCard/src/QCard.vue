@@ -1,12 +1,5 @@
 <template>
   <div
-    ref="reference"
-    class="q-card-trigger"
-  >
-    <slot name="reference" />
-  </div>
-
-  <div
     ref="card"
     class="q-card"
     :class="cardClasses"
@@ -110,8 +103,6 @@ export default defineComponent({
       console.error('QCard requires reference be provided in the slot.');
     }
 
-    const reference = ref<Nullable<HTMLElement>>(null);
-    const iscardShown = ref<boolean>(false);
     const zIndex = ref<number>(DEFAULT_Z_INDEX);
     const card = ref<Nullable<HTMLElement>>(null);
 
@@ -150,7 +141,6 @@ export default defineComponent({
     });
 
     return {
-      reference,
       card,
       cardClasses,
       cardStyles,

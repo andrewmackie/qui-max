@@ -11,7 +11,6 @@ export interface QCardProps {
 }
 
 export interface QCardInstance {
-  reference: Ref<Nullable<HTMLElement>>;
   card: Ref<Nullable<HTMLElement>>;
   cardClasses: ComputedRef<Record<string, boolean>>;
   cardStyles: ComputedRef<Record<string, string | number>>;
