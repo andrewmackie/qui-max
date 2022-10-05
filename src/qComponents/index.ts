@@ -12,6 +12,7 @@ import {
 import { setMessages, setI18n } from './locale';
 import { QBreadcrumbs } from './QBreadcrumbs';
 import { QButton } from './QButton';
+import { QCard } from './QCard';
 import { QCascader } from './QCascader';
 import { QCheckbox } from './QCheckbox';
 import { QCheckboxGroup } from './QCheckboxGroup';
@@ -51,6 +52,7 @@ import '../main.scss';
 
 import './QBreadcrumbs/src/q-breadcrumbs.scss';
 import './QButton/src/q-button.scss';
+import './QCard/src/q-card.scss';
 import './QCascader/src/q-cascader.scss';
 import './QCheckbox/src/q-checkbox.scss';
 import './QCheckboxGroup/src/q-checkbox-group.scss';
@@ -121,6 +123,7 @@ const install = (app: App, config?: ConfigOptions): void => {
 
   app.use(QBreadcrumbs);
   app.use(QButton);
+  app.use(QCard);
   app.use(QCascader);
   app.use(QCheckbox);
   app.use(QCheckboxGroup);
@@ -159,6 +162,7 @@ export { createQui, setMessages, setI18n, localeEn, localeRu, localeZh };
 
 export * from './QBreadcrumbs';
 export * from './QButton';
+export * from './QCard';
 export * from './QCascader';
 export * from './QCheckbox';
 export * from './QCheckboxGroup';
